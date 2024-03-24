@@ -41,7 +41,7 @@ const CreateJobForm = ({ fetchAdminJobs }) => {
       settitle("")
       setdescription("")
       setimage("")
-      settitle("")
+      setlocation("")
     } catch (error) {
       console.log(error);
     }
