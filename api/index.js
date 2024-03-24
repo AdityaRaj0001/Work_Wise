@@ -23,7 +23,7 @@ app.use((err, req, res, next) => {
 });
 
 mongoose
-  .connect(`mongodb+srv://meadityaraj0001:${process.env.MONGO_URI_Password}@cluster0.juk8o2e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
+  .connect(`mongodb+srv://${process.env.MONGO_URI_username}:${process.env.MONGO_URI_Password}@cluster0.juk8o2e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
   .then(() => {
     console.log("connection to database successful");
     //listen to request on PORT
