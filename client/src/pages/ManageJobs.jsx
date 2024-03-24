@@ -31,12 +31,12 @@ const ManageJobs = () => {
       </div>
       <CreateJobForm />
       <div className="w-full md:w-1/2 h-full pb-12 flex items-center justify-center flex-col gap-4">
-        <h1 className="text-white text-2xl  ">Jobs created by you will appear here</h1>
+        <h1 className="text-black text-3xl  ">Jobs created by you will appear here</h1>
         <div className="flex gap-4 flex-wrap items-center justify-center md:flex-row">
           {AdminJobs.length>0 ? (
             AdminJobs.map((job, i) => <ManageJobCard key={job._id} {...job} />)
           ) : (
-            <h1 className="text-sm text-gray-200">
+            <h1 className="text-lg  text-gray-500">
               You don't have any jobs right now. Try adding one
             </h1>
           )}
